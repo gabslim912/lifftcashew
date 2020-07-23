@@ -1,4 +1,92 @@
 ---
 label: Blog post
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: post
+  hidden: true
+- name: lang
+  type: select
+  default: Eng
+  config:
+    required: true
+    options:
+    - Eng
+    - Por
+    - Fr
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Language
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+  default: John Doe
+- name: location_t
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Ziguinchor
+    - Kotu
+    - Bissau
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location - Town
+- name: location_r
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Senegambia
+    - Bissau
+    - Casamance
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location Region
+- name: location_c
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Senegal
+    - Gambia
+    - Guinee-Bissau
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location Country
+- name: categories
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Cashew
+    - Government
+    - Project
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Categories
