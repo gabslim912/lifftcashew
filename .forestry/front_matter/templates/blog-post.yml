@@ -130,3 +130,4 @@ fields:
   default: "/uploads/blog-post.jpg"
 pages:
 - _posts/2020-07-10-welcome-to-jekyll.markdown
+- _posts/providing-opportunities-to-restore-lives.md
