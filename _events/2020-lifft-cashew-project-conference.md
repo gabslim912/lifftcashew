@@ -6,7 +6,7 @@ finish_date: 08/14/2020 5:00
 title: 2020 Lifft Cashew Project Conference
 subtitle: Annual presentation of the Lifft Cashew Project results and performance
 location_address: King Fahd Palace
-location_town: Dakar Almadies
+location_town: Almadies
 location_region: Dakar
 location_country: Senegal
 phone: "+ 33 856 42 15"

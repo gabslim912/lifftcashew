@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<main class="main">
+<section class="promo-primary">
+	<picture>
+		<source srcset="{{ page.image }}" media="(min-width: 992px)"/><img class="img--bg" src="{{ page.title }}" alt="img"/>
+	</picture>
+	<div class="promo-primary__description"> <span>Event</span></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-auto">
+				<div class="align-container">
+					<div class="align-container__item"><!--<span class="promo-primary__pre-title">Helpo</span>-->
+						<h1 class="promo-primary__title"><span>{{ page.title }}</span></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- article start-->
+<section class="section article"><img class="article__bg" src="/assets/img/events_inner-bg.png" alt="img"/>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+				<div class="article__img"><img src="{{ page.image }}" alt="img"/></div>
+				<p>{{ page.content }}</p>
+				<div class="article-information">
+					<div class="row offset-30">
+						<div class="col-sm-6 col-lg-4">
+							<div class="article-information__item" style="background: #32C876;">
+								<h6 class="article-information__title">Details</h6>
+								<div class="article-information__details">
+									<div class="article-information__details-item"><span>Start:</span><span>{{ page.start_date }}</span></div>
+									<div class="article-information__details-item"><span>Finish:</span><span>{{ page.finish_date }}</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4">
+							<div class="article-information__item" style="background: #F76588;">
+								<h6 class="article-information__title">Organizer</h6>
+								<div class="article-information__details">
+									<div class="article-information__details-item"><span>Phone:</span><a href="tel:+31859644725">{{ page.phone }}/a></div>
+									<div class="article-information__details-item"><span>E-mail:</span><a href="mailto:helpo@gmail.com">{{ page.email }}</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4">
+							<div class="article-information__item" style="background: #49C2DF;">
+								<h6 class="article-information__title">Venue</h6>
+								<div class="article-information__details">
+									<div class="article-information__details-item"><span>Location:</span><span>{{ page.location_address }}, {{ page.location_town }}, {{ page.location_region }} {{ page.location_country }}</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- article end-->
+<!-- additional events start--
+<section class="section additional-events no-padding-top no-padding-bottom">
+	<div class="row no-gutters">
+		<div class="col-md-6">
+			<div class="additional-event"><a class="additional-event__img" href="event-details.html"><img class="img--bg" src="img/additional_1.jpg" alt="img"/>
+				<div class="additional-event__text"><span>The Culture of</span><span>India. Volunteer</span></div></a></div>
+		</div>
+		<div class="col-md-6">
+			<div class="additional-event"><a class="additional-event__img" href="event-details.html"><img class="img--bg" src="img/additional_2.jpg" alt="img"/>
+				<div class="additional-event__text"><span>Trinity</span><span>Trash Bash</span></div></a></div>
+		</div>
+	</div>
+</section>
+ additional events end-->
+</main>

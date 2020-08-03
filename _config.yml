@@ -23,6 +23,9 @@ collections:
   posts:
     title: Posts
     output: true
+  events:
+    title: Events
+    output: true
 email: lifftcashewinfo@shelter.org
 tel1: + 221 33 845 74 56
 tel2: + 221 33 823 44 45
