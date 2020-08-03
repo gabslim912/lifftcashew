@@ -8,6 +8,7 @@ fields:
     required: false
   label: Layout
   default: event
+  hidden: true
 - name: title
   type: text
   config:
@@ -30,7 +31,7 @@ fields:
   description: ''
   config:
     required: false
-    date_format: 
+    date_format: MM/DD/YYYY
     time_format: h:mm
     display_utc: false
     export_format: MM/DD/YYYY h:mm
@@ -41,7 +42,7 @@ fields:
   description: ''
   config:
     required: false
-    date_format: 
+    date_format: MM/DD/YYYY
     time_format: h:mm
     display_utc: false
     export_format: MM/DD/YYYY h:mm
