@@ -4,11 +4,8 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
-- type: directory
-  path: ''
-  label: Pagess
-  create: all
-  match: "**/.md"
+- type: heading
+  label: Add News, Events & Success stories here
 - type: directory
   path: _events
   label: Events
@@ -16,14 +13,16 @@ sections:
   match: "**/*"
   templates:
   - event
-- type: jekyll-pages
-  label: Pages
-  create: documents
 - type: jekyll-posts
   label: Posts
   create: all
   templates:
   - blog-post
+- type: heading
+  label: Modify pages contents here
+- type: jekyll-pages
+  label: Pages
+  create: documents
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
