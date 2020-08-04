@@ -17,7 +17,8 @@ layout: default
           <p class="text-justify" style="margin-bottom: 25px;"><strong>The Linking Infrastructure, Finance, and Farms to Cashew (LIFFT-Cashew) is a sub-regional project intended to create a more integrated and durable regional network that will enhance the cultivation of cashews and the processing, and selling of cashew products in the local and international markets.</strong><br><br>LIFFT-Cashew is currently being implemented by Shelter For Life International in the Senegal, the Gambia, and Guinea-Bissau cashew production zone (SeGaBi Zone).The $38 million project, implemented in partnership with Connexus Corporation, is funded by the United States Department of Agriculture. <br><br>Only 1.2% of raw cashew nut produced is processed locally, the majority of production is exported to foreign processors, as the RCN processing industries in SeGaBi countries remain underdeveloped. The weakening of the regional cashew value chain has left many farmers without economic opportunity, stagnating market infrastructure, and financial services.</p><a class="button button--primary" href="about.html">More About</a>
         </div>
         <div class="col-lg-6 col-xl-5 offset-xl-1">
-          <div class="info-box"><img class="img--layout" src="/assets/img/about_layout.png" alt="img"/><img class="img--bg" src="/assets/img/cashew_6.png" alt="img"/>
+          <div class="info-box"><!--<img class="img--layout" src="/assets/img/about_layout.png" alt="img"/>-->
+            <img class="img--bg" src="/assets/img/cashew_6.png" alt="img"/>
             <h4 class="info-box__title">Rebuilding communities and restoring lives</h4>
             <p style="font-size: 17px; font-weight: bolder; margin-bottom: 25px;">Many challenges faced by the cashew value chain in SeGaBi: poor access to finance, poor infrastructure, limited investment in research and development, limited application of best practices, high dependency on RCN exports, and an absence of established market information systems.</p><a class="info-box__link" href="#">Become a volunteer</a>
           </div>
@@ -155,6 +156,7 @@ layout: default
         <div class="col-12">
           <div class="items-slider-wrapper">
             <div class="items-slider">
+              {% for story in site.stories %}
               <div class="items-slider__item">
                 <div class="causes-item causes-item--style-3 causes-item--slider no-padding">
                   <div class="causes-item__body">
@@ -170,7 +172,7 @@ layout: default
                               </div>
                             </div>
                           </div>
-                          <!-- slider nav end--><img class="img--bg" src="/assets/img/cashew_8.jpg" alt="img"/>
+                          <!-- slider nav end--><img class="img--bg" src="{{ story.image }}" alt="img"/>
                         </div>
                       </div>
                       <div class="col-xl-4">
@@ -179,8 +181,8 @@ layout: default
                             <div class="causes-item__badge" style="background-color: #49C2DF">Rebuilding communities</div>
                           </div>-->
                           <div class="causes-item__top">
-                            <h6 class="causes-item__title"> <a href="cause-details.html">Rebuilding communities in villages</a></h6>
-                            <p>“When the road is ready, our village will move to be closer to it. Thus, those who have cashew nuts or other products to sell will do it on the side of the road, because it's more accessible". These are the words of Aladje, who has led the village of 319 inhabitants for 8 years.</p>
+                            <h6 class="causes-item__title"> <a href="{{ story.url }}">{{ story.title }}</a></h6>
+                            <p>{{ story.content | slice: 0, 300 }}...</p>
                           </div>
                           <div class="causes-item__lower">
                             <!--<div class="progress-bar">
@@ -192,7 +194,7 @@ layout: default
                               <div class="causes-item__details-item"><span>Goal: </span><span>25 000$</span></div>
                               <div class="causes-item__details-item text-right"><span>Pledged: </span><span>20 350$</span></div>
                             </div>-->
-                            <a class="causes-item__button button button--primary" href="#">Read the story</a>
+                            <a class="causes-item__button button button--primary" href="{{ story.url }}">Read {{ story.first_name }} {{ story.last_name }} story</a>
                           </div>
                         </div>
                       </div>
@@ -200,51 +202,7 @@ layout: default
                   </div>
                 </div>
               </div>
-              <div class="items-slider__item">
-                <div class="causes-item causes-item--style-3 causes-item--slider no-padding">
-                  <div class="causes-item__body">
-                    <div class="row align-items-center">
-                      <div class="col-xl-8">
-                        <div class="causes-item__img">
-                          <!-- slider nav start-->
-                          <div class="slider__nav items-slider__nav">
-                            <div class="slider__arrows">
-                              <div class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i>
-                              </div>
-                              <div class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- slider nav end--><img class="img--bg" src="/assets/img/cashew_2.jpg" alt="img"/>
-                        </div>
-                      </div>
-                      <div class="col-xl-4">
-                        <div class="causes-item__wrapper">
-                          <!-- <div class="causes-item__action">
-                            <div class="causes-item__badge" style="background-color: #49C2DF">Rebuilding communities</div>
-                          </div>-->
-                          <div class="causes-item__top">
-                            <h6 class="causes-item__title"> <a href="#">Restoring lives and communities</a></h6>
-                            <p>"When they came here, they told us about the job opportunity that could be created by building the road, and that made us even happier. We have participated in the bush clearing and removed brush and other debris.” SFL’s rural road rehabilitation and construction, increases market access and improves transaction efficiency, and also engages communities, providing employment in the cashew off-season.</p>
-                          </div>
-                          <div class="causes-item__lower">
-                            <!--<div class="progress-bar">
-                              <div class="progress-bar__inner" style="width: 78%;">
-                                <div class="progress-bar__value">78%</div>
-                              </div>
-                            </div>
-                            <div class="causes-item__details-holder">
-                              <div class="causes-item__details-item"><span>Goal: </span><span>25 000$</span></div>
-                              <div class="causes-item__details-item text-right"><span>Pledged: </span><span>20 350$</span></div>
-                            </div>-->
-                            <a class="causes-item__button button button--primary" href="#">Read the story</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {% endfor %}
               
             </div>
           </div>
@@ -253,7 +211,7 @@ layout: default
     </div>
   </section>
   <!-- causes end-->
-  <!-- section start-->
+  <!-- section start--
   <section class="section">
     <div class="container">
       <div class="row align-items-end margin-bottom">
@@ -263,7 +221,7 @@ layout: default
           </div>
         </div>
         <div class="col-sm-6 text-sm-right">
-          <!-- slider nav start-->
+          <!-- slider nav start--
           <div class="slider__nav projects-slider__nav">
             <div class="slider__arrows">
               <div class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -272,7 +230,7 @@ layout: default
               </div>
             </div>
           </div>
-          <!-- slider nav end-->
+          <!-- slider nav end--
         </div>
       </div>
     </div>
@@ -335,19 +293,19 @@ layout: default
       </div>
     </div>
   </section>
-  <!-- section end-->
+   section end-->
   <!-- text section start-->
   <section class="section text-section text-section--front_2 padding-bottom"><img class="text-section__bg" src="/assets/img/africa_2.png" alt="img" style="width: 35%; height: auto; opacity: 0.2;" />
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="text-section__heading">Cooperatives</h2>
+          <h2 class="text-section__heading">Contributors</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-8 offset-lg-4 col-xl-7 offset-xl-4">
           <h3 class="text-section__title">Linking Infrastructure, Finance, and Farms to Cashew (LIFFT-Cashew)</h3>
-          <p>Our program addresses this by developing value chain linkages necessary to support an integrated regional trade network for the cashew value chain, and enhancing the production and trade of cashews in local and international markets.</p><a class="button button--primary" href="#">Join a cooperative</a>
+          <p>Our program addresses this by developing value chain linkages necessary to support an integrated regional trade network for the cashew value chain, and enhancing the production and trade of cashews in local and international markets.</p><a class="button button--primary" href="#">Become a contributor</a>
         </div>
       </div>
     </div>
@@ -356,71 +314,70 @@ layout: default
   
   
   <!-- blog start-->
-  <section class="section blog" style="background-color: #D4D4D4;"><!--<img class="blog__bg" src="/assets/img/blog_bg.png" alt="img"/>-->
+  <!-- blog start-->
+  <section class="section blog blog--front_3"><img class="blog__bg" src="img/blog_bg-2.png" alt="img"/>
     <div class="container">
       <div class="row margin-bottom">
         <div class="col-12">
           <div class="heading heading--primary heading--center"><span class="heading__pre-title">News</span>
-            <h2 class="heading__title no-margin-bottom"><span>Our</span> <span>Blog</span></h2>
+            <h2 class="heading__title no-margin-bottom"><span>Helpo</span> <span>Blog</span></h2>
           </div>
         </div>
       </div>
       <div class="row offset-margin">
-        <div class="col-md-6 col-lg-5 col-xl-4">
+        {% for post in site.posts limit:3 %}
+        <div class="col-md-6 col-xl-4">
           <div class="blog-item blog-item--style-1">
-            <div class="blog-item__img"><img class="img--bg" src="/assets/img/cashew101.jpg" alt="img"/><span class="blog-item__badge" style="background-color: #49C2DF;">Infrastructure</span></div>
+            <div class="blog-item__img"><img class="img--bg" src="{{ post.image }}" alt="img"/><span class="blog-item__badge" style="background-color: #49C2DF;">{{ post.categories }}</span></div>
             <div class="blog-item__content">
-              <h6 class="blog-item__title"><a href="#">Providing Opportunities to Restore Lives</a></h6>
-              <p>The Baconding-Bindada road in Senegal is bordered by four abandoned villages that were abandoned in 1981 due to sustained conflict in Casamance.</p>
-              <div class="blog-item__details"><span class="blog-item__date">23 Jan' 20</span><span>
+              <h6 class="blog-item__title" style="height: 50px;"><a href="{{ post.url }}">{{ post.title }}</a></h6>
+              <p style="height: 99px;">{{ post.subtitle }}</p>
+              <div class="blog-item__details"><span class="blog-item__date">{{ post.publication_date }}</span><span>
                 <svg class="icon">
                   <use xlink:href="#comment"></use>
-                </svg> 5</span></div>
+                </svg> 501</span></div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-7 col-xl-8">
-          <div class="blog-item blog-item--style-2"><img class="img--bg" src="/assets/img/cashew_21.jpg" alt="img"/>
-            <div class="blog-item__content"><span class="blog-item__badge" style="background-color: #2EC774;">Lifft Cashew Project</span>
-              <h6 class="blog-item__title"><a href="#">An Afternoon with the U.S. Ambassador to Senegal</a></h6>
-              <p>A lengthy low-level conflict in the Casamance region of southern Senegal disrupted local communities and displaced thousands of local people away from their villages.</p>
-            </div>
-            <div class="blog-item__details"><span class="blog-item__date">23 Mar' 20</span><span>
-              <svg class="icon">
-                <use xlink:href="#comment"></use>
-              </svg> 11</span></div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-7 col-xl-8">
-          <div class="blog-item blog-item--style-2"><img class="img--bg" src="/assets/img/cashew_111.jpg" alt="img"/>
-            <div class="blog-item__content"><span class="blog-item__badge" style="background-color: #F8AC3A;">Agriculture</span>
-              <h6 class="blog-item__title"><a href="#">Rebuilding Casamance, A Win-Win situation</a></h6>
-              <p>As the number of people affected by conflict grows worldwide, the need to address mass displacement also grows. Last month our CEO traveled to Senegal to visit sites where our team has worked since 2012.</p>
-            </div>
-            <div class="blog-item__details"><span class="blog-item__date">23 Jan' 19</span><span>
-              <svg class="icon">
-                <use xlink:href="#comment"></use>
-              </svg> 11</span></div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-5 col-xl-4">
-          <div class="blog-item blog-item--style-1">
-            <div class="blog-item__img"><img class="img--bg" src="/assets/img/cashew_141.jpg" alt="img"/><span class="blog-item__badge" style="background-color: #F36F8F;">Economy</span></div>
-            <div class="blog-item__content">
-              <h6 class="blog-item__title"><a href="#">Five Things our Beneficiaries are Thankful For</a></h6>
-              <p>Feeling thankful? So are we! In the spirit of thanksgiving, we thought we would share 5 things our beneficiaries are thankful for.</p>
-              <div class="blog-item__details"><span class="blog-item__date">23 Jan' 19</span><span>
-                <svg class="icon">
-                  <use xlink:href="#comment"></use>
-                </svg> 15</span></div>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
   <!-- blog end-->
-  
+  <!-- blog end-->
+  <!-- events start-->
+  <section class="section events events--front_2"><!--<img class="events__bg" src="img/events_bg.png" alt="img"/>-->
+    <div class="container">
+      <div class="row margin-bottom">
+        <div class="col-12">
+          <div class="heading heading--primary heading--center"><span class="heading__pre-title">Events</span>
+            <h2 class="heading__title"><span>Discover</span> <span>all our events</span></h2>
+            <p class="no-margin-bottom">Every year we host several events to let you know what's mew about the Lifft-Cashew Project. Do not hesitate to come and join us</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      {% for event in site.events %}
+        <div class="col-md-6 col-lg-4">
+          <div class="event-item">
+            <div class="event-item__img"><img class="img--bg" src="{{ event.image }}" alt="img"/></div>
+            <div class="event-item__content">
+              <h6 class="event-item__title"><a href="#">{{ event.title }}</a></h6>
+              <p><b>{{ event.location_address }},</b> {{ event.location_town }}, {{ event.location_region }}, {{ event.location_country }}</p>
+              <p><b>{{event.start_date | date: "%b %d,"}} - {{event.finish_date | date: "%b %d,"}},</b> {{event.start_date | date: "%y"}}</p>
+              <p><b>{{event.start_date | date: "%H %M"}} AM - {{ event.finish_date | date: "%H %M"}} PM,</b> Everyday</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+      </div>
+      <div class="row">
+        <div class="col-12 text-center"><a class="button button--primary" href="/events.html">View all events</a></div>
+      </div>
+    </div>
+  </section>
+  <!-- events end-->
   <!-- testimonials style-2 start-->
   <section class="section testimonials--style-2" >
     <div class="testimonials--style-2__bg jarallax">
@@ -474,7 +431,9 @@ layout: default
     </div>
   </section>
   <!-- testimonials style-2 end-->
-  <!-- donors start-->
   {%- include donors.html -%}
+  
+  <!-- donors start-->
+  
   <!-- donors end-->
   
