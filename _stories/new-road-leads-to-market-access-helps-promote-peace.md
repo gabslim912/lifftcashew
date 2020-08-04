@@ -6,6 +6,7 @@ last_name: Sadio
 location: Casamance, Senegal
 subtitle: Mamadou is the head of a household of ten. He has four children, one of
   whom is in school. He makes his money by growing peanuts, maize, potatoes, and cashews.
+date: 2016-08-31 00:00:00 +0000
 
 ---
 Bala Sadio lives in Djibanar, a community affected by a decades-long conflict between the separatist rebel group Mouvement des Forces Démocratiques de la Casamance (MFDC), and the Senegal government. Bala was just two years old when the conflict started, and witnessed many of its effects on his village, including raids and shootings. “The rebels set fires in all the shops, every single one, and even in people’s houses. They stole everyone’s food, and all the animals.”
