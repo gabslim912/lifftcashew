@@ -18,6 +18,11 @@ sections:
   create: all
   templates:
   - blog-post
+- type: directory
+  path: _stories
+  label: Success stories
+  create: all
+  match: "**/*"
 - type: heading
   label: Modify pages contents here
 - type: jekyll-pages
