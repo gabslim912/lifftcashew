@@ -1,8 +1,8 @@
 ---
 layout: event
 image: "/uploads/wcc_1.jpg"
-start_date: 08/18/2020 8:30
-finish_date: 08/20/2020 5:30
+start_date: 2020-08-18 09:30:00 +0000
+finish_date: 08/20/2020 4:30
 title: '2020 World Cashew Convention & Exhibition '
 subtitle: The 5th Edition of the World Cashew Convention & Exhibition
 location_address: King Fahd Palace
