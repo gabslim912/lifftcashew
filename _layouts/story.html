@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<main class="main">
+	<section class="promo-primary">
+		<picture>
+			<source srcset="{{ page.image }}" media="(min-width: 992px)"/><img class="img--bg" src="{{ page.image }}" alt="img"/>
+		</picture>
+		<div class="promo-primary__description"> <span>{{ page.first_name }} {{ page.last_name }}</span></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-auto">
+					<div class="align-container">
+						<div class="align-container__item"><!--<span class="promo-primary__pre-title">Helpo</span>-->
+							<h1 class="promo-primary__title" style="font-size: 30px;"><span>{{ page.title }}</span></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- storie details start-->
+	<section class="section storie-details"><!--<img class="storie-details__bg" src="img/storie_details-bg.png" alt="img"/>-->
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 offset-xl-2">
+					<div class="storie-details__top">
+						<div class="storie-details__img"><img class="img--bg" src="{{ page.image }}" alt="img"/></div>
+						<div class="storie-details__description">
+							<div class="row align-items-center">
+								<div class="col-md-4 text-center text-md-left">
+									<h5 class="storie-details__name">{{ page.first_name }} {{ page.last_name }}</h5>
+								</div>
+								<!--<div class="col-md-4 text-center text-md-left"><span>Donation So Far: <strong>845$</strong></span></div>
+								<div class="col-md-4 text-center text-md-right"><a class="storie-details__button button button--primary" href="#">+ Donate</a></div>-->
+							</div>
+						</div>
+					</div>
+					<p>{{ page.content }}</p>
+					<div class="storie-details__details">
+						<div class="row align-items-center">
+							<div class="col-md-8">
+								<div class="storie-details__tags">Category: <a class="storie-details__tag" href="#">#Donate</a> <a class="storie-details__tag" href="#">#Homelesspeople</a> <a class="storie-details__tag" href="#">#Poor</a> <a class="storie-details__tag" href="#">#Child</a></div>
+							</div>
+							<div class="col-md-4">
+								<ul class="storie-details__socials">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- storie details end-->
+</main>

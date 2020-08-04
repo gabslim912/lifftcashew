@@ -1,4 +1,5 @@
 ---
+layout: story
 image: "/uploads/story_1.jpg"
 title: After Two Decades, Families Return Home
 first_name: Boubkar

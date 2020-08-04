@@ -20,13 +20,13 @@ layout: default
 		</div>
 	</section>
 	<!-- events inner start-->
-	<section class="section events-inner"><img class="events-inner__bg" src="img/events_inner-bg.png" alt="img"/>
+	<section class="section events-inner"><!--<img class="events-inner__bg" src="img/events_inner-bg.png" alt="img"/>-->
 		<div class="container">
 			<div class="row offset-30">
 				{% for event in site.events %}
 				<div class="col-xl-10 offset-xl-1">
 					<div class="upcoming-item">
-						<div class="upcoming-item__date"><span>25</span><span>Aug, 20</span></div>
+						<div class="upcoming-item__date"><span>{{event.start_date | date: "%d"}}</span><span>{{event.start_date | date: "%b, %y"}}</span></div>
 						<div class="upcoming-item__body">
 							<div class="row align-items-center">
 								<div class="col-lg-5 col-xl-4">
