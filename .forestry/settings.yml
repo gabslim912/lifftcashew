@@ -23,6 +23,8 @@ sections:
   label: Success stories
   create: all
   match: "**/*"
+  templates:
+  - story
 - type: heading
   label: Modify pages contents here
 - type: jekyll-pages

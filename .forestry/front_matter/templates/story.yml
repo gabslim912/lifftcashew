@@ -1,4 +1,39 @@
 ---
 label: Story
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: first_name
+  type: text
+  config:
+    required: false
+  label: First Name
+- name: last_name
+  type: text
+  config:
+    required: false
+  label: Last Name
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  default: "/uploads/event_1.jpg"
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subtitle
