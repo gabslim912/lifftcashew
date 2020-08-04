@@ -1,4 +1,5 @@
 ---
+layout: story
 image: "/uploads/story_3.jpg"
 title: New Road Leads to Market Access, Helps Promote Peace
 first_name: Bala

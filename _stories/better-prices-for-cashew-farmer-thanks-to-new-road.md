@@ -1,4 +1,5 @@
 ---
+layout: story
 image: "/uploads/story_5.jpg"
 title: Better Prices for Cashew Farmer Thanks To New Road
 first_name: Mamadou
