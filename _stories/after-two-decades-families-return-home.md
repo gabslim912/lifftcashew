@@ -6,6 +6,7 @@ last_name: Sane
 location: Casamance, Senegal
 subtitle: The Casamance region of Senegal has suffered substantial internal conflict
   over the years, forcing hundreds of families to flee.
+date: 2017-12-25 00:00:00 +0000
 
 ---
 The Casamance region of Senegal has suffered substantial internal conflict over the years, forcing hundreds of families to flee. In 1996, Boubkar Sane and his family (picture above) were forced to leave their home and their community. Years later, with the hope that peace had returned, Boubkar and his family attempted to return home in 2009, but were forced to leave again due to continued conflict.
