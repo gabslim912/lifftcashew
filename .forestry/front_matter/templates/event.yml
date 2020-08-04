@@ -78,5 +78,6 @@ fields:
     required: false
   label: Email
 pages:
+- _events/2020-annual-visit-of-u.s.ambassador-to-senegal.md
 - _events/2020-lifft-cashew-project-conference.md
 - _events/2020-world-cashew-convention-exhibition.md
