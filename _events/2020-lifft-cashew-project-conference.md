@@ -1,8 +1,8 @@
 ---
 layout: event
 image: "/uploads/cashew_1.jpg"
-start_date: 08/13/2020 8:00
-finish_date: 08/14/2020 5:00
+start_date: 2020-08-13 07:00:00 +0000
+finish_date: 08/14/2020 6:00
 title: 2020 Lifft Cashew Project Conference
 subtitle: Annual presentation of the Lifft Cashew Project results and performance
 location_address: King Fahd Palace
