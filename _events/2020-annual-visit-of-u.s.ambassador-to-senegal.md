@@ -1,8 +1,8 @@
 ---
 layout: event
 image: "/uploads/event_12.jpg"
-start_date: 08/10/2020 8:30
-finish_date: 08/12/2020 5:00
+start_date: 2008-10-21 08:30:00 +0000
+finish_date: 08/13/2020 5:00
 title: 2020 Annual visit of U.S. Ambassador to Senegal
 subtitle: 'To address this need, SFL launched the Returnee Reintegration Program funded
   by the US State Department’s Bureau of Population, Refugees, and Migration (PRM). '
