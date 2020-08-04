@@ -34,7 +34,7 @@ fields:
     date_format: MM/DD/YYYY
     time_format: h:mm
     display_utc: false
-    export_format: MM/DD/YYYY h:mm
+    export_format: ''
   default: now
 - name: finish_date
   type: datetime
