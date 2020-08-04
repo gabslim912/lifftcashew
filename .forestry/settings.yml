@@ -5,6 +5,11 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: heading
+  label: Modify pages contents here
+- type: jekyll-pages
+  label: Pages
+  create: documents
+- type: heading
   label: Add News, Events & Success stories here
 - type: directory
   path: _events
@@ -26,10 +31,14 @@ sections:
   templates:
   - story
 - type: heading
-  label: Modify pages contents here
-- type: jekyll-pages
-  label: Pages
-  create: documents
+  label: FAQ (Add questions and answers here)
+- type: directory
+  path: _faqs
+  label: Q&As
+  create: all
+  match: "**/*"
+  templates:
+  - faq
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
