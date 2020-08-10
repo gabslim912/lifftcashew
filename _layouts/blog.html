@@ -3,9 +3,9 @@ layout: default
 ---
 
 <main class="main">
-	<section class="promo-primary">
+	<section class="promo-primary" style="height: 450px;">
+			<source srcset="{{ page.parallax_image }}" media="(min-width: 992px)" /><img class="img--bg" src="{{ page.parallax_image }}"  alt="{{ page.title }}"/><img class="blog__bg" src="/assets/img/blkbckg.jpg" alt="img" style="width: 100%; opacity: 0.5;" />
 		<picture>
-			<source srcset="{{ page.parallax_image }}" media="(min-width: 992px)"/><img class="img--bg" src="{{ page.parallax_image }}" alt="{{ page.title }}"/>
 		</picture>
 		<div class="promo-primary__description"> <span>{{ page.title }}</span></div>
 		<div class="container">
